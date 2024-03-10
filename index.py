@@ -55,8 +55,8 @@ app = Flask(__name__)
 # In[2]:
 
 reddit = asyncpraw.Reddit(user_agent="Comment Extraction (by /u/heerak_ts08)",
-                     client_id="AoraGPVhWEwg8-0pvJK7iw", 
-                     client_secret="H-X1i223eMrspr4lpbtwOE-3-5bhaQ")
+                     client_id="", 
+                     client_secret="")
 
 async def reddit_comments(x):
     url = x
