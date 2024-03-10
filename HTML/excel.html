@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/style_excel.css">
+    <link rel="stylesheet" href="public/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="nav-text">
+            <a href="#">CyberMatrix</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Home</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Features</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Pricing</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Contact us</a>
+          </div>
+        </div>
+    </header>
+
+    <div class="main-text">
+      <div class="main-logo">
+        <div class="logo">
+        </div>
+      </div>
+      
+        <h1>Sentiment Analysis</h1>
+    </div>
+
+    <div class="main-div">
+      <div class="table-container">
+        <table class="myTable">
+          <tr>
+              <th>Text</th>
+              <th>Sentiment</th>
+              <th>Emoticon</th>
+          </tr>
+          <tbody>
+  
+          </tbody>
+      </table>
+      </div>
+
+      <div class="word_cloud">
+        <div class="word-img"></div>
+      </div>
+
+    </div>
+
+    
+    <div class="chart-container">
+      <div class="chart1">
+        <canvas id="bar" width="700" height="400"></canvas>
+      </div>
+      <div class="chart2">
+        <canvas id="doughnut" width="400" height="400"></canvas>
+      </div>
+    </div>
+    
+    <div class="Recommedation" data-aos="fade-in" data-aos-duration="1000">
+      <div class="recom-head lowflex">
+        <ion-icon name="laptop-outline" class="iconz"></ion-icon>
+        <h1>AI Recommedation</h1>
+      </div>
+      <div class="recom-body">
+      <p>Based on the words you provided, here are some recommendations that could help the company improve its products and increase profits: Improve product quality: Focus on using high-quality ingredients and implementing strict quality control measures to ensure that every product meets customer expectations. This will help to build trust and loyalty with customers, who are more likely to return and recommend the company to others. Enhance Taste: conduct consumer taste tests to identify areas where the products can be improved in terms of flavor, texture, and overall taste. Consider using natural ingredients or introducing new flavors to make the products more appealing to customers. Address bad texture issues: Identify the root cause of any texture issues and take corrective action. This could involve reformulating the product or adjusting the manufacturing process to improve the texture. Price competitively: Conduct market research to determine the optimal price point.</p>
+      </div>
+    </div>
+
+    <div class="summary" data-aos="fade-in" data-aos-duration="1000">
+      <div class="recom-head lowflex">
+        <ion-icon name="book-outline" class="iconz"></ion-icon>
+        <h1>AI Summary</h1>
+      </div>
+      <div class="recom-body">
+        <p>The text reflects a mix of opinions on Prime Minister Modi, ranging from support for his governance to criticism. Some mention Modi's promises of "minimum government, maximum governance" and the expectation of reforms. There are comments on issues like justice, economic policies (demonetization, GST), and Modi's leadership style.
+
+        Some statements express support for Modi in the upcoming elections, while others criticize him for job creation and economic challenges. The text also includes mentions of various political figures, discussions on religious and caste dynamics, and references to specific events or controversies.
+            
+        Overall, the text covers diverse perspectives on Indian politics, with a focus on the leadership of Narendra Modi.</p>
+      </div>
+    </div>
+
+  <footer data-aos="fade-in" data-aos-duration="4000">
+        <div class="row" style="overflow: hidden;" id="signup">
+            <div class="col col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>                
+                </ul>
+            </div>
+            <div class="col col span_1_of_2">
+                <ul class="social-links">
+                    <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon class="tw" name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon class="gg" name="logo-google"></ion-icon></li>
+                    <li><ion-icon class="ins" name="logo-instagram"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footerp" >
+            <p>Copyright &copy; 2023 by CyberMatrix. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="public/excel/table_excel.js"></script>
+    <script src="public/maxwords.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+    <script src="public/excel/chart1_excel.js"></script>
+    <script src="public/excel/chart2_excel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

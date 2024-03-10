@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimental Analysis</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="nav-text">
+            <a href="#">CyberMatrix</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Home</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Features</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Pricing</a>
+          </div>
+          <div class="nav-sec1">
+            <a href="">Contact us</a>
+          </div>
+        </div>
+    </header>
+    
+    
+    
+  <div class="main-text">
+    <div class="main-head ">
+        <h1>Social Media Sentimental Analysis</h1>
+    </div>
+    <div class="main-para">
+        <p>Get Your Social Media Insights Right Now!</p>
+    </div>
+    <div class="search">
+        <form action="/predict" method="post">
+            <input type="text" placeholder="Search Here" class="searchinput" name = "search2">
+            <a href="#"><ion-icon name="caret-forward-outline" class="search-icon"></ion-icon></a>
+        </form>
+    </div>
+  </div>
+
+
+  <div class="main-pic">
+    <div class="pic" data-aos="zoom-in" data-aos-duration="1000">
+        
+    </div>
+  </div>
+      
+  <div class="line" data-aos="fade-down" data-aos-duration="500">
+
+  </div>
+
+  <div class="select">
+    <div class="select-text" data-aos="zoom-in" data-aos-duration="1500">
+      <h2>Select Your Platform:</h2>
+    </div>
+    <div class="line2" data-aos="fade-down" data-aos-duration="800"></div>
+    <div class="line3" data-aos="fade-down" data-aos-duration="1000"></div>
+    <div class="liners" data-aos="fade-down" data-aos-duration="1200">
+      <div class="liner l1" data-aos="zoom-in-right" data-aos-duration="1200"></div>
+      <div class="liner l2" data-aos="zoom-in-right" data-aos-duration="1200"></div>
+      <div class="liner l3" data-aos="zoom-in-up" data-aos-duration="1200"></div>
+      <div class="liner l4" data-aos="zoom-in-left" data-aos-duration="1200"></div>
+      <div class="liner l5" data-aos="zoom-in-left" data-aos-duration="1200"></div>
+    </div>
+    </div>
+    
+    <div class="select-icons">
+      <div class="twitter" data-aos="zoom-in-right" data-aos-duration="1400">
+        <img src="public/Resources/twitter.png" alt="twitter" class="twitter bg" id="twitter">
+      </div>
+      <div class="youtube" data-aos="zoom-in-right" data-aos-duration="1400">
+        <img src="public/Resources/youtube.png" alt="youtube" class="youtube bg" id="youtube">
+      </div>
+      <div class="reddit" data-aos="zoom-in-up" data-aos-duration="1400">
+        <img src="public/Resources/reddit.png" alt="reddit" class="reddit bg" id="reddit">
+      </div>
+      <div class="facebook" data-aos="zoom-in-left" data-aos-duration="1400">
+        <img src="public/Resources/facebook.png" alt="facebook" class="facebook bg" id="facebook">
+      </div>
+      <div class="instagram" data-aos="zoom-in-left" data-aos-duration="1400">
+        <img src="public/Resources/instagram.png" alt="instagram" class="instagram bg" id="instagram">
+      </div>
+    </div>
+
+    <div class="appear-box" id="appear-box" data-aos="zoom-in-right" data-aos-duration="600">
+      <div class="icons-search">
+        <form action="/" method="post" id="socialForm">
+          <input type="text" placeholder=" " id="myinput" class="search2 searchinput" name="search2">
+        <a href="#"><ion-icon name="caret-forward-outline" class="search-icon icon2"></ion-icon></a>
+      </form>
+    </div>
+  </div>
+
+  <div class="excel" data-aos="fade-in" data-aos-duration="4000">
+    <div class="excel-h">
+      <h2>Got Excel File as input?</h2>
+      <p>Dont Worry we got you Covered!</p>
+    </div>
+    <div class="excelsec">
+      <div class="excelpng">
+        <img src="public/Resources/excel.png" alt="Excel" class="Excelimg bg">
+      </div>
+      <div class="excel-select">
+        <div class="ex-text">
+          <h3>Select Your File</h3>
+        </div>
+        <form action="/upload-excel" method="post" enctype="multipart/form-data">
+          <div class="ex-inp">
+            <input type="file" name="excelfile" class="excelfile" accept=".csv">
+          </div>
+          <div class="ex-button">
+            <button type="submit" class="ex-but">Submit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature" data-aos="fade-in" data-aos-duration="4000">
+    <div class="feature-main">
+      <h2>Why Choose Us?</h2>
+      <div class="brisk"></div>
+      <p>We CyberMatrix Provide Best and Easiest Solution for Your Social Media Analysis Problems!</p>
+    </div>
+
+    <div class="features">
+      <div class="feature1">
+        <ion-icon name="time-outline" class="iconz"></ion-icon>
+        <h4>Real Time Analysis</h4>
+        <p>Deep-learning model performs real-time sentiment analysis, swiftly gauging emotions for instant insights into user opinions and reactions.</p>
+      </div>
+
+      <div class="feature2">
+        <ion-icon name="language-outline" class="iconz"></ion-icon>
+        <h4>multilingual</h4>
+        <p>Enhance analysis with broad multilingual support, expanding capabilities and ensuring comprehensive insights across diverse linguistic contexts.</p>
+      </div>
+
+      <div class="feature3">
+        <ion-icon name="laptop-outline" class="iconz"></ion-icon>
+        <h4>AI Recommedation</h4>
+        <p>AI-driven recommendation system providing tailored suggestions, optimizing user experience through personalized content, enhancing engagement, and maximizin satisfaction.</p>
+      </div>
+
+      <div class="feature4">
+        <ion-icon name="document-lock-outline" class="iconz"></ion-icon>
+        <h4>Secured</h4>
+        <p>Our webapp uses a self-contained deep learning model to automatically analyze social media content securely, without relying on third-party APIs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="excel" data-aos="fade-in" data-aos-duration="4000">
+    <div class="excel-h">
+      <h2>Get Model trained on your Dataset!</h2>
+      <p>Upload Your Training Data and Get our Model Trained on it.</p>
+    </div>
+    <div class="excelsec">
+      <div class="excelpng">
+        <img src="public/Resources/Brainnew.png" alt="Excel" class="Excelimg">
+      </div>
+      <div class="excel-select">
+        <div class="ex-text">
+          <h3>Select Your Dataset</h3>
+        </div>
+        <form action="/" method="post">
+        <div class="ex-inp">
+          <input type="file" class="excelfile">
+        </div>
+        <div class="ex-button">
+          <button type="submit" class="ex-but">Submit</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-form" style="overflow: hidden;"  data-aos="fade-in" data-aos-duration="4000">
+    <div class="row contact-head">
+        <h2>We're Happy to hear from you</h2>
+    </div>
+    <div class="brisk"></div>
+    <div class="row">
+        <form action="#" method="post" class="contact-form">
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="" class="formtext">Name</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <input type="text" name="text" id="name" placeholder="Your name" class="forminp" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="" class="formtext">Email</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <input type="email" name="email" id="email" placeholder="Your email" class="forminp" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="" class="formtext">How did you find us?</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <select name="find-us" id="find-us" class="forminp">
+                        <option value="friends">Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="" class="formtext">NewsLetter</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <input type="checkbox" name="news" id="news" class="formcheck" checked >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="" class="formtext">Drop your review</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <textarea name="textarea" id="ta" cols="30" rows="10" class="forminp"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <label for="">&nbsp;</label>
+                </div>
+                <div class="col span_2_of_3">
+                    <input type="submit" value="Send-Us" class="formbut">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer data-aos="fade-in" data-aos-duration="4000">
+  <div class="row" style="overflow: hidden;" id="signup">
+      <div class="col col span_1_of_2">
+          <ul class="footer-nav">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">IOS App</a></li>
+              <li><a href="#">Android App</a></li>                
+          </ul>
+      </div>
+      <div class="col col span_1_of_2">
+          <ul class="social-links">
+              <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+              <li><ion-icon class="tw" name="logo-twitter"></ion-icon></li>
+              <li><ion-icon class="gg" name="logo-google"></ion-icon></li>
+              <li><ion-icon class="ins" name="logo-instagram"></ion-icon></li>
+          </ul>
+      </div>
+  </div>
+  <div class="row footerp" >
+      <p>Copyright &copy; 2023 by CyberMatrix. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="public/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
