@@ -194,7 +194,7 @@ def get_all_tweets_data(x):
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="text"]'))).send_keys("@HeerakA1000")
     wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@role='button'][contains(.,'Next')]"))).click()
 
-    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="password"]'))).send_keys("@Sahha08")
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="password"]'))).send_keys("")
     wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@role='button'][contains(.,'Log in')]"))).click()
 
     #x = str(input("enter the user id(without @): "))
@@ -202,7 +202,7 @@ def get_all_tweets_data(x):
     # wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="text"]'))).send_keys("@HeroAgraw5073")
     # wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@role='button'][contains(.,'Next')]"))).click()
 
-    # wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="password"]'))).send_keys("@Sahha08")
+    # wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '[name="password"]'))).send_keys("")
     # wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@role='button'][contains(.,'Log in')]"))).click()
     sleep(5)
     wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Posts"))).click()
